@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 5%;
+    align-items: center;
+    background-color: white;
+    top:0px;
+    z-index: 10;
+    }
+    nav .logo{
+        width: 100%;
+        
+    }
+nav .logo img{
+    width: 35%;
+    height: 100px;
+    
+    
+}
+nav .dropdown {
+    display: flex;
+    }
+.dropdown a{
+    padding: 0px 20px;
+    color: green;
+    text-decoration: none;
+    font-size: 20px;
+
+   }
+.toggleBTN{
+    display: none;
+    color: green;
+}
+.headerdiv{
+    display: flex;
+    background-image: url(./images/biotechnology-examples-types.jpg);
+    background-repeat: no-repeat;
+    height:700px;
+    width:100%;
+    margin-top:50px;
+    align-items:center;
+    background-size: 100% 100%;
+    flex-wrap: wrap;
+  
+}
+.content h1{
+    font-size:50px;
+    color:white
+    
+}
+.content{
+    padding-left:50px
+}
+.headerdiv button{
+    background-color: darkgreen;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+    
+}
+.headerdiv button:hover{
+    background-color: white;
+    color: darkgreen;
+    cursor: pointer;
+
+}
+.welcome{
+    display: flex;
+    background-color: darkgreen;
+    color: white;
+    padding: 50px 2%;
+    position: absolute;
+    top: 120%;
+    left: 25%;
+    width: 50%;
+    border-radius: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.welcome p{
+    margin-top: 10px;
+}
+.welcome:hover{
+    box-shadow: 0 0 10px black;
+}
+.section{
+    padding-top: 30vh;
+    text-align: center;
+}
+.heading{
+    color: darkgreen;
+   
+
+}
+.cardcontainer{
+    padding: 50px 5%;
+    text-align: center;
+   
+}
+.servicecards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    width:300px;
+    height: 400px;
+    padding: 60px 0;
+    position: relative;
+    margin: 10px 0;
+}
+.card .up img{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transition: all .5s;
+}
+.card .up img:hover{
+    scale: 110%;
+   
+}
+.card .down{
+    width: 270px;
+    top: 60%;
+    left: 15px;
+    height: 200px;
+    background-color: rgb(0, 100, 0);
+    color: white;
+    bottom: 30%;
+    position: absolute;
+    padding: 30px 10px;
+    box-shadow: 0 0 10px black;
+    text-align: left;
+   
+}
+.card a{
+    color: white;
+    text-decoration: none;
+    font-style: bold;
+    font-size: 20px;
+}
+.card a:hover{
+  text-shadow: 0 0 5px white;
+}
+.card p{
+    margin-top: 10px;
+}
+.cardcontainer button{
+    font-size: 20px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border:2px solid white 
+}
+.cardcontainer button:hover{
+    background-color: white;
+    color: darkgreen;
+    border-color: darkgreen;
+}
+.newssection{
+    padding: 50px 10%;
+    background-color: darkgreen;
+    text-align: center;
+}
+.newscardsection{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: darkgreen;
+}
+.newscard{
+    width: 50%;
+    height: 200px;
+    background-color: darkgreen;
+    color: white;
+    padding: 40px 10px;
+    position: relative;
+    margin: 10px 0;
+    text-align: left;
+    
+
+}
+.newscard p{
+    margin-top: 10px;
+}
+.newscard:hover{
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+    background-color:rgba(255, 255, 255, 0.621);
+    color: darkgreen;
+    
+}
+.newssection button{
+    font-size: 20px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 60px;
+    cursor: pointer;
+    border: white solid;
+}
+.newssection button:hover{
+    background-color: rgba(255, 255, 255, 0.957);
+    color: darkgreen;
+}
+article{
+    display: flex;
+    flex-wrap: ;
+}
+
+
+
+
+
+@media (max-width:768px){
+    nav .dropdown{
+        display: none;
+        position: fixed;
+        top: 50px;
+        height: 200px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+
+    }
+
+    nav a{
+        display: block;
+        width: 100%;
+        height: 30px;
+
+    }
+    nav .logo img{
+        width: 25%
+        
+    }
+    .toggleBTN{
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .headerdiv{
+        height: 400px;
+        width:100%;
+    }
+    .content h1{
+        font-size: 30px;
+    }
+    .headerdiv button{
+        font-size:medium
+    }
+    .welcome{
+        background-color: darkgreen;
+        color: white;
+        padding: 30px 2%;
+        position: absolute;
+        top: 90%;
+        left: 10%;
+        width: 80%;
+        border-radius: 10px;
+    }
+    .welcome h1{
+        font-size: 20px;
+    }
+    .section{
+        padding-top: 55vh;
+        text-align: center;
+    }
+    .heading h1{
+        font-size: 20px;
+    }
+    .cardcontainer button{
+        font-size: medium;
+    }
+    .newscard{
+        width: 100%;
+    }
+    .newscard h1{
+        font-size: 20px;
+    }
+    .newssection button{
+        font-size: medium;
+    }
+   
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+        <nav>
+            <div class="logo">
+                <img src="./images/Taglogo.jpg" alt="">
+            </div>
+            <div class="toggleBTN">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="dropdown">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="">Services</a>
+                <a href="">Pages</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+                </ul>
+        </nav>
+    <div class="headerdiv">
+       
+        <div class="content">
+            <h1>GenoTech Hub is to <br>  pioneer innovative <br>biotechnological solutions</h1>
+            <button>About Us</button>
+        </div>
+        <div class="welcome">
+            <h1>Welcome to GenoTech Hub</h1>
+            <p> At GenoTech Hub, we are committed to pioneering innovative solutions in biotechnology to address the complex challenges facing our world. Our multidisciplinary team of scientists, engineers, and researchers is dedicated to pushing the boundaries of scientific discovery and driving positive change through advanced biotechnological solutions.</p>
+        </div>
+    </div>
+    <div class="section">
+        <div class="heading">
+            <h1>OUR SERVICES</h1>
+        </div>
+    </div>
+    <div class="cardcontainer">
+        <div class="servicecards">
+            <div class="card">
+                <div class="up">
+                    <img src="./images/geneticengineering.jpg" alt="">
+                    <div class="down">
+                        <a href="">Genetic Engineering</a>
+                        <p>Harness the potential of genetic engineering to develop customized solutions for healthcare, agriculture, and environmental conservation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="up">
+                    <img src="./images/pharma.jpg" alt="">
+                    <div class="down">
+                        <a href="">Pharmaceutical Development</a>
+                        <p>Accelerate drug discovery and development processes through our expertise in molecular biology and pharmaceutical sciences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="up">
+                    <img src="./images/bioinfo.jpg" alt="">
+                    <div class="down">
+                        <a href="">Bioinformatics</a>
+                        <p>Leverage cutting-edge computational techniques to analyze complex biological data and uncover actionable insights.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="up">
+                    <img src="./images/nutrigenomics.jpg" alt="">
+                    <div class="down">
+                        <a href="">Nutrigenomics</a>
+                        <p>Explore the interaction between genes, nutrition, and health to develop personalized dietary recommendations and functional foods.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="up">
+                    <img src="./images/stem-cell-therapy.jpg" alt="">
+                    <div class="down">
+                        <a href="">Stem Cell Therapy</a>
+                        <p>Research and develop regenerative medicine treatments using stem cells for tissue repair and regeneration.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="up">
+                    <img src="./images/environbiotech.jpg" alt="">
+                    <div class="down">
+                        <a href="">Environmental Biotechnology</a>
+                        <p>Create sustainable solutions for waste management, pollution remediation, and renewable energy production.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>More Services</button>
+    </div>
+    <div class="newssection">
+        <div class="newscardsection">
+            <div class="newscard">
+                <h1>News and Updates</h1>
+            </div>
+            <div class="newscard">
+                <h1>Research Breakthroughs</h1>
+                <hr>
+                <p>Explore our groundbreaking discoveries and advancements in biotechnology. From uncovering new insights into the human genome to developing cutting-edge technologies.</p>
+            </div>
+            <div class="newscard">
+                <h1>Recognition and Awards</h1>
+                <hr>
+                <p> From prestigious awards to grants and funding opportunities, our achievements underscore our commitment to excellence and impact in the field.</p>
+            </div>
+            <div class="newscard">
+                <h1>Publications and Presentations</h1>
+                <hr>
+                <p>Dive into our latest publications, presentations, and contributions to scientific conferences and symposiums.</p>
+            </div>
+           
+        </div>
+        <button>More</button>
+    </div>
+    <!-- <article>
+        <img src="./images/client.jpg" alt="">
+        <div>
+            <h1>Client Testimonials</h1>
+            <p>"GenoTech Hub has been an invaluable partner in our quest for innovative treatments. Their expertise in genetic engineering and pharmaceutical development has accelerated our drug discovery efforts, leading to promising advancements in the fight against cancer."</p>
+            <h3>Dr. Emily Chen, Chief Medical Officer, BioPharm Innovations</h3>
+        </div>
+    </article>
+    <article>
+        
+        <div>
+            <h1>Client Testimonials</h1>
+            <p>"GenoTech Hub has been an invaluable partner in our quest for innovative treatments. Their expertise in genetic engineering and pharmaceutical development has accelerated our drug discovery efforts, leading to promising advancements in the fight against cancer."</p>
+            <h3>Dr. Emily Chen, Chief Medical Officer, BioPharm Innovations</h3>
+        </div>
+        <img src="./images/client.jpg" alt="">
+    </article> -->
+
+    
+    <script>
+        $(".toggleBTN").click(function(){
+            $(".dropdown").slideToggle()
+        })
+    </script>
+</body>
+</html>
