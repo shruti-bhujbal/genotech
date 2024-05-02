@@ -20,7 +20,7 @@ nav{
         
     }
 nav .logo img{
-    width: 35%;
+    width: 180px;
     height: 100px;
     
     
@@ -33,7 +33,12 @@ nav .dropdown {
     color: green;
     text-decoration: none;
     font-size: 20px;
-
+    line-height: 40px;
+   }
+   .dropdown a:hover{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px ;
    }
 .toggleBTN{
     display: none;
@@ -41,7 +46,7 @@ nav .dropdown {
 }
 .headerdiv{
     display: flex;
-    background-image: url(./images/biotechnology-examples-types.jpg);
+    background: linear-gradient(to right top , rgba(0, 128, 0, 0.53) , rgba(255, 255, 255, 0.064) ),url("./images/biotechnology-examples-types.jpg");
     background-repeat: no-repeat;
     height:700px;
     width:100%;
@@ -95,16 +100,30 @@ nav .dropdown {
     box-shadow: 0 0 10px black;
 }
 .section{
-    padding-top: 30vh;
+    padding-top: 39vh;
     text-align: center;
 }
 .heading{
-    color: darkgreen;
-   
-
+    /* color: white;
+    background-color: darkgreen;
+   padding: 10px 0; */
+   color: darkgreen;
+}
+.heading{
+    position: relative;
+}
+.heading::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: darkgreen;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .cardcontainer{
-    padding: 50px 5%;
+    padding: 30px 5%;
     text-align: center;
    
 }
@@ -199,7 +218,7 @@ nav .dropdown {
 .newscard:hover{
     box-shadow: 0 0 2px black;
     cursor: pointer;
-    background-color:rgba(255, 255, 255, 0.621);
+    background-color:rgba(255, 255, 255, 0.58);
     color: darkgreen;
     
 }
@@ -218,14 +237,119 @@ nav .dropdown {
     background-color: rgba(255, 255, 255, 0.957);
     color: darkgreen;
 }
+.newscardsection .newscard:nth-child(1){
+    font-size: 30px;
+    border-left: white solid ;
+    padding-top: 10px;
+}
 article{
     display: flex;
-    flex-wrap: ;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+article div{
+    width: 50%;
+    background-color: darkgreen;
+    color: white;
+    padding: 60px 5% 50px 10%;
+}
+article img{
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+  
+    
+}
+article div p,article div h3{
+    padding-top: 10px;
+}
+article div p{
+    font-style: italic;
+}
+.projectsection h1{
+    margin-top: 10%;
+   
+    text-align: center;
+}
+.projectcontainer{
+    margin-top: 10%;
+    display: flex;
+    flex-wrap:wrap ;
+    padding: 10px 5%;
+    justify-content: space-around;
+
+
+}
+.projectbox{
+    margin-top: 30px;
+    width: 30%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background-size:  100% 100%;
+
+}
+.projectbox:nth-child(1){
+    background-image:url(./images/precisionmed.jpg) ;
+}
+.projectbox:nth-child(2){
+    background-image:url(./images/biocomputing.jpg) ;
+}
+.projectbox:nth-child(3){
+    background-image:url(./images/nextgenvaccine.jpg) ;
 }
 
+.projectcard{
+    width: 100%;
+    height: 400px;
+    padding: 30px 30px;
+    top: 74%;
+    position: absolute;
+    color:white;
+    transition: all .5s;
+    background:linear-gradient(to bottom ,rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.865)) ;
 
+}
+.projectcard a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    position: absolute;
+}
+.projectcard p{
+   margin-top: 30%;
+    position: absolute;
+}
+.projectbox:hover .projectcard{
+    top: 0%;
+    background:linear-gradient(to bottom ,rgba(0, 0, 0, 0.466),rgba(0, 0, 0, 0.865)) ;
+}
+footer{
+    padding: 50px ;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+}
 
-
+footer .right img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+footer div{
+    width:30%;
+    padding: 30px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+}
 
 @media (max-width:768px){
     nav .dropdown{
@@ -247,7 +371,7 @@ article{
 
     }
     nav .logo img{
-        width: 25%
+        width: 180px;
         
     }
     .toggleBTN{
@@ -279,7 +403,7 @@ article{
         font-size: 20px;
     }
     .section{
-        padding-top: 50vh;
+        padding-top: 52vh;
         text-align: center;
     }
     .heading h1{
@@ -291,11 +415,46 @@ article{
     .newscard{
         width: 100%;
     }
-    .newscard h1{
-        font-size: 20px;
-    }
+
     .newssection button{
         font-size: medium;
     }
+    
+    .projectsection h1{
+        font-size: 20px;
+    }
+    .projectcontainer{
+        width: 100%;
+    }
+    .projectcard{
+        width: 100%;
+    }
+    .projectcard a{
+        font-size: 20px;
+    }
+     .projectbox{
+        margin: 10px;
+        width: 90%;
+     }
+     footer div{
+        width:100%
+    }
+    footer .right img{
+        width:50%;
+    }
+
    
+}
+
+@media (max-width:500px){
+    article img{
+        width: 100%;
+    }
+    article div{
+        width: 100%;
+    }
+    footer .right img{
+        width:80%;
+    }
+
 }
