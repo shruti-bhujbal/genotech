@@ -355,8 +355,8 @@ footer a{
     nav .dropdown{
         display: none;
         position: fixed;
-        top: 50px;
-        height: 200px;
+        top: 90px;
+        padding: 20px 0;
         left: 0;
         width: 100%;
         text-align: center;
