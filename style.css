@@ -14,6 +14,7 @@ nav{
     background-color: white;
     top:0px;
     z-index: 10;
+    border-bottom: solid darkgreen 2px;
     }
     nav .logo{
         width: 100%;
@@ -95,6 +96,7 @@ nav .dropdown {
 }
 .welcome p{
     margin-top: 10px;
+    text-align: justify;
 }
 .welcome:hover{
     box-shadow: 0 0 10px black;
@@ -237,6 +239,11 @@ nav .dropdown {
     background-color: rgba(255, 255, 255, 0.957);
     color: darkgreen;
 }
+.newscard a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
 .newscardsection .newscard:nth-child(1){
     font-size: 30px;
     border-left: white solid ;
@@ -303,7 +310,7 @@ article div p{
 .projectcard{
     width: 100%;
     height: 400px;
-    padding: 30px 30px;
+    padding: 30px 10px;
     top: 74%;
     position: absolute;
     color:white;
@@ -407,7 +414,7 @@ footer a{
         text-align: center;
     }
     .heading h1{
-        font-size: 20px;
+        font-size: 30px;
     }
     .cardcontainer button{
         font-size: medium;
@@ -421,7 +428,7 @@ footer a{
     }
     
     .projectsection h1{
-        font-size: 20px;
+        font-size: 30px;
     }
     .projectcontainer{
         width: 100%;
