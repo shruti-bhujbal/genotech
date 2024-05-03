@@ -1,7 +1,19 @@
+
+/***********************FONT FAMILY*************************************/
+
+@font-face{
+    font-family: myfont;
+    src:url("./fonts/Poppins-Light.ttf")
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: myfont;
+    
 }
 nav{
     width: 100%;
@@ -81,6 +93,19 @@ nav .dropdown {
     cursor: pointer;
 
 }
+.poster{
+    
+    display: none;
+   
+
+}
+.poster p{
+    margin-top: 10px;
+}
+.poster:hover{
+    box-shadow: 0 0 10px black;
+    transition: all 0.6s ease-in-out;
+}
 .welcome{
     display: flex;
     background-color: darkgreen;
@@ -94,12 +119,14 @@ nav .dropdown {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .welcome p{
     margin-top: 10px;
     text-align: justify;
 }
 .welcome:hover{
     box-shadow: 0 0 10px black;
+    transition: all 0.6s ease-in-out;
 }
 .section{
     padding-top: 39vh;
@@ -176,6 +203,7 @@ nav .dropdown {
 }
 .card p{
     margin-top: 10px;
+    font-size: 14px;
 }
 .cardcontainer button{
     font-size: 20px;
@@ -321,7 +349,7 @@ article div p{
 .projectcard a{
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
 }
 .projectcard p{
@@ -391,7 +419,7 @@ footer a{
         width:100%;
     }
     .content h1{
-        font-size: 30px;
+        font-size: 25px;
     }
     .headerdiv button{
         font-size:medium
@@ -407,10 +435,13 @@ footer a{
         border-radius: 10px;
     }
     .welcome h1{
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .welcome p{
+        font-size: 14px;
     }
     .section{
-        padding-top: 52vh;
+        padding-top: 60vh;
         text-align: center;
     }
     .heading h1{
@@ -421,6 +452,16 @@ footer a{
     }
     .newscard{
         width: 100%;
+    }
+    .newscard a{
+        font-size: 23px;
+    }
+    .newssection .newscard h1{
+        font-size: 35px;
+
+    }
+    .newscard p{
+        font-size: 14px;
     }
 
     .newssection button{
@@ -438,6 +479,9 @@ footer a{
     }
     .projectcard a{
         font-size: 20px;
+    }
+    .projectcard p{
+        font-size: 14px;
     }
      .projectbox{
         margin: 10px;
@@ -464,4 +508,31 @@ footer a{
         width:80%;
     }
 
+}
+@media (max-width:320px){
+.poster{
+    display: block;
+    background-color: darkgreen;
+    color: white;
+    padding: 50px 2%;
+    margin: auto;
+    width: 80%;
+    border-radius: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.poster h1{
+    font-size: 25px;
+    text-align: center;
+}
+.poster p{
+    text-align: center;
+}
+.welcome{
+    display: none;
+}
+.section{
+    padding-top: 20vh;
+}
 }

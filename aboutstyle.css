@@ -1,7 +1,20 @@
+
+
+/***********************FONT FAMILY*************************************/
+
+@font-face{
+    font-family: myfont;
+    src:url("./fonts/Poppins-Light.ttf")
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: myfont;
+    
 }
 nav{
     width: 100%;
@@ -47,29 +60,171 @@ nav .dropdown {
 }
 header{
     width: 100%;
-    height: 200px;
-    background-image: url(images/about.jpg);
+    height: 250px;
+    background: linear-gradient(to right top , rgba(0, 128, 53, 0.256) , rgba(245, 242, 242, 0.151) ),url("./images/about.jpeg");
+    background-size: 100% 100%;
     display: flex;
     flex-wrap:wrap ;
-    margin-top: 6%;
+    margin-top: 50px;
     position: relative;
     background-repeat: no-repeat;
-   
+    align-items: center;
 }
 
 .content{
-    padding: 50px;
-    align-items: center;
-    position: absolute;
+    padding-left: 50px;
 }
 .content h1{
-    width: 50%;
     color: white;
-    
-
+    padding: 30px 30px;
+    font-size: 50px;
+}
+section{
+    margin: auto;
+    width: 100%;
+    background-color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+section h1{
+    color: darkgreen;
+    font-size: 25px;
+    text-align: justify;
+    font-style: italic;
+   
+}
+section h2{
+    color: darkgreen;
+    font-size: 30px;
+    text-decoration-line: underline;
+    text-align: center;
+}
+section p{
+    color:darkgreen;
+    font-size: 25px;
+    text-align: justify;
     
 }
-@media (max-width:768px){
+section li{
+    color: darkgreen;
+    font-size: 25px;
+    text-align: justify;
+}
+article{
+    width: 100%;
+    padding: 60px;
+    margin: auto;
+}
+article h1{
+    text-align: center;
+    font-size: 40px;
+    color: darkgreen;
+}
+.heading{
+    position: relative;
+}
+.heading::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: darkgreen;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+article p{
+    text-align: justify;
+    font-size:  25px ;
+    color: darkgreen;
+    
+}
+
+.container{
+    width: 100%;
+    padding: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .left{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    box-shadow: 0 0 1px black;
+    position: absolute;
+    top: 25px;
+   left:-125px;
+  
+    
+}
+.card .left img{
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: -10px 10px 10px rgb(96, 96, 96);
+}
+.card{
+    padding: 50px 0px;
+    width: 700px;
+    position: relative;
+    background-color: darkgreen;
+    margin:2px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: end;
+    box-shadow: 0 0  5px black;
+}
+.info{
+    width:75%;
+    padding: 0px 50px 0px 0px;
+}
+.info h1, .info p{
+    font-size: 20px;
+    color: white;
+    text-align: end;
+}
+.info h2{
+    font-size: 15px;
+    color: white;
+    text-align: end;
+}
+.dr{
+    display: none;
+}
+footer{
+    padding: 50px ;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+}
+
+footer .right img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+footer div{
+    width:30%;
+    padding: 30px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+
+
+
+@media (max-width:900px){
     nav .dropdown{
         display: none;
         position: fixed;
@@ -96,5 +251,220 @@ header{
         display: block;
         font-size: 20px;
         cursor: pointer;
+    }
+    header{
+        width: 100%;
+        height: 200px;
+    } 
+    .content h1{
+        font-size: 25px;
+        padding: 30px 30px;
+    }
+    section{
+        width: 100%;
+    }
+    section h1{
+        
+        font-size: 25px;
+      
+        text-align: left;
+    }
+    section h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    section p{
+        font-size: 25px;
+        
+        text-align: left;
+    }
+    section li{
+        font-size: 25px;
+        text-align: left
+    }
+    article{
+        width: 100%;
+    }
+    article h1{
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    article p{
+        text-align: justify;
+        font-size:  25px ;
+        color: darkgreen;
+       
+    }
+   
+    .card{
+        width: 90% !important;
+    }
+    .info h1, .info p{
+        font-size: 15px;
+        text-align: end;
+    }
+    .info h2{
+        font-size: 10px;
+        text-align: end;
+    }
+    footer div{
+        width:100%
+    }
+    footer .right img{
+        width:50%;
+    }
+
+    .card{
+       
+        width: 100%;
+        position: relative;
+        background-color: darkgreen;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: end;
+        box-shadow: 0 0  5px black;
+    }
+    .card .left{
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+       
+        position: absolute;
+        top: 25px;
+        left:-70px
+        
+    }
+}
+@media (max-width:500px){
+
+    .content h1{
+        font-size: 20px;
+        padding: 90px 0 0 0;
+    }
+    section{
+        width: 100%;
+    }
+    section h1{
+        
+        font-size: 18px;
+        
+       
+    }
+    section h2{
+        font-size: 25px;
+        text-align: center;
+    }
+    section p{
+        font-size: 18px;
+        
+        text-align: left;
+    }
+    section li{
+        font-size: 18px;
+        text-align: left
+    }
+    article{
+        width: 100%;
+    }
+    article h1{
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    article p{
+        font-size:  18px ;
+        color: darkgreen;
+        text-align: left;
+        
+    }
+    .container{
+        display: none;
+    }
+    .dr{
+        display: block;
+        width: 100%;
+        
+        margin-top: 10%;
+    }
+    .img{
+        margin-top: 10%;
+        background-color: darkgreen;
+    }
+    .img img{
+        width: 100%;
+    
+
+    }
+    .name{
+        background-color: darkgreen;
+    }
+    .name h2, .name h1, .name p{
+        padding: 10px;
+        color: white;
+        font-size: medium;
+        text-align: left;
+    }
+    .card{
+        width: 90% !important;
+    }
+    .info h1, .info p{
+        font-size: 15px;
+        text-align: end;
+    }
+    .info p{
+        font-size: 10px;
+        text-align: end;
+        display: none;
+    }
+    .info h2{
+        font-size: 12px;
+        text-align: end;
+    }
+    footer div{
+        width:100%
+    }
+    footer .right img{
+        width:50%;
+    }
+
+    .card{
+       
+        width: 100%;
+        position: relative;
+        background-color: darkgreen;
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content: end;
+        box-shadow: 0 0  5px black;
+    }
+    .card .left{
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+       
+        position: absolute;
+        top: 25px;
+        left:-35px
+        
+    }
+    .info{
+        width:75%;
+        padding: 0px 50px 0px 0px;
+    }
+}
+
+@media(max-width:380px) {
+    .card .left{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+       
+        position: absolute;
+        top: 25px;
+        left:-25px
+        
     }
 }

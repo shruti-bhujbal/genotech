@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEBSITE</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -18,12 +18,12 @@
             </div>
             <ul class="dropdown">
                 <a href="">Home</a>
-                <a href="">About</a>
+                <a href="about.html">About</a>
                 <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="">Services</a>
-                <a href="">Projects</a>
-                <a href="">News</a>
-                <a href="">Contact</a>
+                <a href="#service">Services</a>
+                <a href="#project">Projects</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
                 </ul>
         </nav>
     <div class="headerdiv">
@@ -32,13 +32,19 @@
             <h1>GenoTech Hub is to <br>  pioneer innovative <br>biotechnological solutions</h1>
             <button>About Us</button>
         </div>
+        
         <div class="welcome">
             <h1>Welcome to GenoTech Hub</h1>
             
             <p> At GenoTech Hub, we are committed to pioneering innovative solutions in biotechnology to address the complex challenges facing our world. Our multidisciplinary team of scientists, engineers, and researchers is dedicated to pushing the boundaries of scientific discovery and driving positive change through advanced biotechnological solutions.</p>
         </div>
     </div>
-    <div class="section">
+    <div class="poster">
+        <h1>Welcome to GenoTech Hub</h1>
+            
+            <p> At GenoTech Hub, we are committed to pioneering innovative solutions in biotechnology to address the complex challenges facing our world. Our multidisciplinary team of scientists, engineers, and researchers is dedicated to pushing the boundaries of scientific discovery and driving positive change through advanced biotechnological solutions.</p>
+    </div>
+    <div id="service"    class="section">
             
             <h1 class="heading">OUR SERVICES</h1>
            
@@ -102,7 +108,7 @@
         </div>
         <button>More Services</button>
     </div>
-    <div class="newssection">
+    <div id="news" class="newssection">
         <div class="newscardsection">
             <div class="newscard">
                 <h1>News and Updates</h1>
@@ -127,7 +133,7 @@
         <button>More</button>
     </div>
     
-    <div class="projectsection">
+    <div id="project" class="projectsection">
         <h1 class="heading">OUR PROJECTS</h1>
         <div class="projectcontainer">
             <div class="projectbox">
@@ -167,7 +173,7 @@
         </div>
         <img src="./images/client.jpg" alt="">
     </article>
-    <footer>
+    <footer id="contact">
         <div class="left">
             <h3>Follow Us On Social Media</h3>
             <br>
