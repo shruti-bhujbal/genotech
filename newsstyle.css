@@ -257,6 +257,10 @@ footer a{
     footer .right img{
         width:50%;
     }
+    .logo a{
+        display: block;
+        height: 102px;
+    }
 }
 
     @media (max-width:320px) {

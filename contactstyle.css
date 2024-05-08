@@ -156,6 +156,10 @@ footer a{
     text-decoration: none;
     padding: 20px 10px;
 }
+.logo a{
+    display: block;
+    height: 102px;
+}
 
 
 
@@ -204,6 +208,12 @@ footer a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    }
+    footer div{
+        width:100%
+    }
+    footer .right img{
+        width:50%;
     }
    
    

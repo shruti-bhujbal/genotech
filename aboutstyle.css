@@ -36,8 +36,6 @@ nav{
 nav .logo img{
     width: 180px;
     height: 100px;
-    
-    
 }
 nav .dropdown {
     display: flex;
@@ -236,7 +234,10 @@ footer a{
     text-decoration: none;
     padding: 20px 10px;
 }
-
+.logo a{
+    display: block;
+    height: 102px;
+}
 
 
 
@@ -273,7 +274,7 @@ footer a{
         height: 200px;
     } 
     .content h1{
-        /* font-size: 25px; */
+        
         padding: 30px 30px;
     }
     section{
