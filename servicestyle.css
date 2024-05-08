@@ -1,0 +1,306 @@
+/***********************FONT FAMILY*************************************/
+
+@font-face{
+    font-family: myfont;
+    src:url("./fonts/Poppins-Light.ttf")
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+    
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 5%;
+    align-items: center;
+    background-color: white;
+    top:0px;
+    z-index: 10;
+    border-bottom: solid darkgreen 2px;
+    }
+    nav .logo{
+        width: 100%;
+        
+    }
+nav .logo img{
+    width: 180px;
+    height: 100px;
+    
+    
+}
+nav .dropdown {
+    display: flex;
+    }
+.dropdown a{
+    padding: 0px 20px;
+    color: green;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+   }
+   .dropdown a:hover{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px ;
+   }
+.toggleBTN{
+    display: none;
+    color: green;
+}
+header{
+    display: flex;
+    background: linear-gradient(to right top , rgba(4, 52, 19, 0.882) , rgba(13, 11, 90, 0) ),url("./images/services.jpg");
+    background-repeat: no-repeat;
+    height:250px;
+    width:100%;
+    margin-top:50px;
+    align-items:center;
+    background-size: 100% 100%;
+    flex-wrap: wrap;
+  
+}
+header h1{
+    color: white;
+    padding: 20px 0 0 50px;
+    font-size: 50px;
+}
+.servicecard{
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    position: relative;
+    background-color: darkgreen;
+}
+
+.image{
+    display: flex;
+    
+}
+
+.image img{
+    height:600px;
+    width: 800px;
+}
+
+.card{
+    padding: 20px 20px;
+    background-color: white;
+    color: darkgreen;
+    position: absolute;
+    top: 15%;
+    width: 600px;
+    left: 40%;
+   
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+
+}
+.r{
+   left:10%
+}
+.card:hover{
+   
+    box-shadow: 0 0 7px white;
+    transition: all 0.5s ease-in-out;
+
+}
+.servicecontainer{
+   
+    display: none;
+    
+}
+footer{
+    padding: 50px ;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+}
+
+footer .right img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+footer div{
+    width:30%;
+    padding: 30px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+
+
+
+
+@media (max-width:900px){
+    nav .dropdown{
+        display: none;
+        position: fixed;
+        top: 90px;
+        padding: 20px 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+
+    }
+
+    nav a{
+        display: block;
+        width: 100%;
+        height: 30px;
+
+    }
+    nav .logo img{
+        width: 180px;
+        
+    }
+    .toggleBTN{
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    header{
+        height: 200px;
+    }
+    header h1{
+        font-size:  30px;
+    }
+    .servicecard{
+        display: none;
+    }
+    section{
+        background-color: darkgreen;
+    }
+    .servicecontainer{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        display: block;
+        margin: auto;
+        background-color: darkgreen;
+        
+        
+        
+    }
+    .service{
+        display: flex;
+        flex-wrap: wrap;
+    width: 90%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    background-size:  100% 100%;
+    border-radius: 20px;
+    margin: auto;
+    }
+    .mediabackground1{
+        background-image: url(./images/geneticengineering.jpg);
+    }
+    .mediabackground2{
+        background-image: url(./images/pharma.jpg);
+    }
+    .mediabackground3{
+        background-image: url(./images/bioinfo.jpg);
+    }
+    .mediabackground4{
+        background-image: url(./images/nutrigenomics.jpg);
+    }
+    .mediabackground5{
+        background-image: url(./images/stem-cell-therapy.jpg);
+    }
+    .mediabackground6{
+        background-image: url(./images/environbiotech.jpg);
+    }
+    .mediabackground7{
+        background-image: url(./images/micro.jpg);
+    }
+    .mediabackground8{
+        background-image: url(./images/Synthetic-bio.jpg);
+    }
+    .mediabackground9{
+        background-image: url(./images/training.jpg);
+    }
+    
+
+    .card1{
+        position: absolute;
+        padding: 30px 30px;
+        color: white;
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        top: 82%;
+        transition: all .5s;
+        background:linear-gradient(to bottom ,rgba(0, 0, 0, 0.667),rgba(0, 0, 0, 0.703)) ;
+
+    }
+    .card1 p{
+        padding-top: 10px;
+    }
+    .service:hover .card1{
+        top: 0%;
+    }
+    footer div{
+        width:100%
+    }
+    footer .right img{
+        width:50%;
+    }
+
+    
+
+}
+@media (max-width: 500px) {
+
+
+    .service{
+        height: 500px;
+    }
+    .card1{
+        height: 500px;
+    }
+    .card1 h1{
+        font-size: 18px;
+}
+.card1 p{
+    font-size: 14px;
+    padding-top: 15px;
+}
+footer div{
+    width:100%
+}
+footer .right img{
+    width:50%;
+}
+}
+@media (max-width:320px) {
+    .card1 h1{
+        font-size: 15px;
+}
+.card1 {
+    top: 86%;
+}
+}

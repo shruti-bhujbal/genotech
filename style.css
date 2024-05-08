@@ -149,8 +149,16 @@ nav .dropdown {
     display: block;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) ;
 }
+
+.heading:hover::after{
+    width: 200px;
+    transition: all 0.5s  ease-out ;
+
+
+}
+
 .cardcontainer{
     padding: 30px 5%;
     text-align: center;
@@ -173,6 +181,7 @@ nav .dropdown {
     height: 200px;
     position: relative;
     transition: all .5s;
+    border-radius: 10px;
 }
 .card .up img:hover{
     scale: 110%;
@@ -190,6 +199,7 @@ nav .dropdown {
     padding: 30px 10px;
     box-shadow: 0 0 10px black;
     text-align: left;
+    border-radius: 10px;
    
 }
 .card a{
@@ -199,7 +209,7 @@ nav .dropdown {
     font-size: 20px;
 }
 .card a:hover{
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.447);
 }
 .card p{
     margin-top: 10px;
@@ -212,12 +222,13 @@ nav .dropdown {
     border-radius: 10px;
     padding: 10px 20px;
     margin-top: 80px;
-    border:2px solid white 
+    border:2px solid white ;
 }
 .cardcontainer button:hover{
     background-color: white;
     color: darkgreen;
     border-color: darkgreen;
+    cursor: pointer;
 }
 .newssection{
     padding: 50px 10%;
@@ -250,6 +261,7 @@ nav .dropdown {
     cursor: pointer;
     background-color:rgba(255, 255, 255, 0.58);
     color: darkgreen;
+    border-radius: 10px;
     
 }
 .newssection button{
@@ -288,11 +300,14 @@ article div{
     background-color: darkgreen;
     color: white;
     padding: 60px 5% 50px 10%;
+    border-radius: 10px;
 }
 article img{
     width: 300px;
     height: 300px;
     margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 4px black;
   
     
 }
@@ -302,19 +317,46 @@ article div p,article div h3{
 article div p{
     font-style: italic;
 }
+.projectsection button{
+    display: block;
+    margin: auto;
+    text-decoration: none;
+}
+
+.projectsection a {
+    text-decoration: none;
+}
 .projectsection h1{
     margin-top: 10%;
-   
     text-align: center;
+    
+    
 }
 .projectcontainer{
-    margin-top: 10%;
+    margin-top: 3%;
     display: flex;
     flex-wrap:wrap ;
     padding: 10px 5%;
     justify-content: space-around;
+   
+}
+.projectsection button{
+    font-size: 20px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 80px;
+    border:2px solid white ;
+    
 
-
+    
+}
+.projectsection button:hover{
+    background-color: white;
+    color: darkgreen;
+    border-color: darkgreen;
+    cursor: pointer;
 }
 .projectbox{
     margin-top: 30px;
@@ -323,6 +365,7 @@ article div p{
     overflow: hidden;
     position: relative;
     background-size:  100% 100%;
+    border-radius: 10px;
 
 }
 .projectbox:nth-child(1){
@@ -344,6 +387,7 @@ article div p{
     color:white;
     transition: all .5s;
     background:linear-gradient(to bottom ,rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.865)) ;
+    
 
 }
 .projectcard a{
@@ -351,6 +395,7 @@ article div p{
     text-decoration: none;
     font-size: 25px;
     position: absolute;
+    
 }
 .projectcard p{
    margin-top: 30%;
@@ -375,6 +420,8 @@ footer .right img{
     width: 80%;
     display: block;
     margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 2px white;
 }
 footer div{
     width:30%;
@@ -503,9 +550,14 @@ footer a{
     }
     article div{
         width: 100%;
+        border-radius: 0;
     }
     footer .right img{
         width:80%;
+    }
+    article img{
+        width: 250px;
+        height: 250px;
     }
 
 }

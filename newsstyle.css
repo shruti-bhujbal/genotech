@@ -1,0 +1,268 @@
+/***********************FONT FAMILY*************************************/
+
+@font-face{
+    font-family: myfont;
+    src:url("./fonts/Poppins-Light.ttf")
+}
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+    
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 5%;
+    align-items: center;
+    background-color: white;
+    top:0px;
+    z-index: 10;
+    border-bottom: solid darkgreen 2px;
+    }
+    nav .logo{
+        width: 100%;
+        
+    }
+nav .logo img{
+    width: 180px;
+    height: 100px;
+    
+    
+}
+nav .dropdown {
+    display: flex;
+    }
+.dropdown a{
+    padding: 0px 20px;
+    color: green;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 40px;
+   }
+   .dropdown a:hover{
+    background-color: darkgreen;
+    color: white;
+    border-radius: 10px ;
+   }
+.toggleBTN{
+    display: none;
+    color: green;
+}
+header{
+    display: flex;
+    background: linear-gradient(to right top , rgb(2, 7, 54) , rgba(13, 11, 90, 0) ),url("./images/newsevents.jpg");
+    background-repeat: no-repeat;
+    height:250px;
+    width:100%;
+    margin-top:50px;
+    align-items:center;
+    background-size: 100% 100%;
+    flex-wrap: wrap;
+  
+}
+header h1{
+    color: white;
+    padding: 20px 0 0 50px;
+    font-size: 50px;
+}
+article{
+    color: darkgreen;
+    padding: 30px;
+    text-wrap: wrap;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.newssection{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkgreen;
+   
+}
+.newscontainer{
+   
+    padding-bottom: 10px;
+    width: 58%;
+    background-color: darkgreen;
+    
+}
+.img{
+  
+    width: 100%;
+}
+.img img{
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: 400px;
+    margin-top: 5%;
+    
+   
+}
+.card{
+    margin-top: 5%;
+    width: 90%;
+    padding: 50px;
+    display: block;
+    margin: auto;
+    color: darkgreen;
+    background: linear-gradient(to right top , rgba(242, 245, 242, 0.74) , rgba(166, 192, 177, 0.959) );
+    font-weight: bold;
+}
+
+.right{
+width: 40%;
+background-color: darkgreen;
+/* background: linear-gradient(to right top , rgba(242, 245, 242, 0.74) , rgba(166, 192, 177, 0.959) ); */
+
+
+
+}
+.card1{
+   
+    width: 100%;
+    display: flex;
+    background: linear-gradient(to right top , rgba(242, 245, 242, 0.74) , rgba(166, 192, 177, 0.959) );
+    margin: 0px 10px 10px 10px ;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+}
+.card1:hover{
+    scale: 101%;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.826);
+}
+.right .left{
+    width: 30%;
+}
+.right .left img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding-left: 10px;
+
+}
+.content{
+    width: 70%;
+    font-size: 13px;
+    display: block;
+    margin: auto;
+    color: darkgreen;
+    padding: 10px;
+    font-weight: bold;
+    
+    
+   
+}
+footer{
+    padding: 50px ;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+}
+
+footer .right img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+footer div{
+    width:30%;
+    padding: 30px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    padding: 20px 10px;
+}
+
+
+@media (max-width:900px){
+    nav .dropdown{
+        display: none;
+        position: fixed;
+        top: 90px;
+        padding: 20px 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+
+    }
+
+    nav a{
+        display: block;
+        width: 100%;
+        height: 30px;
+
+    }
+    nav .logo img{
+        width: 180px;
+        
+    }
+    .toggleBTN{
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    header{
+        height: 200px;
+    }
+    header h1{
+        font-size:  30px;
+    }
+    article{
+        text-align: left;
+    }
+   
+    .newssection{
+        flex-direction: column;
+    }
+    .newscontainer{
+        width: 100%;
+    }
+    .card1{
+        /* flex-direction: column; */
+        width: 100%;
+    }
+    .right .left img{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    
+    .content{
+        width: 100%;
+    }
+    .card{
+       
+        font-size: 16px;
+    }
+    footer div{
+        width:100%
+    }
+    footer .right img{
+        width:50%;
+    }
+}
+
+    @media (max-width:320px) {
+        .content{
+            font-size: 12px;
+    }
+    
+}
+
